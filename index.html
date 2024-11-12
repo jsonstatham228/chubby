@@ -14,26 +14,6 @@
     </head>
     <body>
         <div id="root"></div>
-        <script>
-            function replaceChonkWithChub() {
-              // Get all elements in the document
-              const elements = document.body.getElementsByTagName('*');
-
-              // Loop through all elements
-              for (let element of elements) {
-                // If the element has text content, check and replace 'chonk' with 'chub'
-                if (element.childNodes.length) {
-                  for (let node of element.childNodes) {
-                    if (node.nodeType === 3) { // 3 corresponds to text nodes
-                      node.textContent = node.textContent.replace(/\bCHONKY\b/g, 'CHUBBY');
-                    }
-                  }
-                }
-              }
-            }
-
-            // Call the function to replace text
-            replaceChonkWithChub();
-        </script>
+       
     </body>
 </html>
